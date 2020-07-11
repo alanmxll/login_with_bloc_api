@@ -1,3 +1,7 @@
+import 'package:get_it/get_it.dart';
+import 'package:login_with_bloc_api/core/dependency_injection/dependency_injection_conf.dart';
+import 'package:login_with_bloc_api/modules/user/presentation/controllers/check_login_password_controller.dart';
+
 import 'login_with_bloc_api.dart';
 
 /// This type initializes an application.
@@ -13,7 +17,9 @@ class LoginWithBlocApiChannel extends ApplicationChannel {
   /// This method is invoked prior to [entryPoint] being accessed.
   @override
   Future prepare() async {
-    logger.onRecord.listen((rec) => print("$rec ${rec.error ?? ""} ${rec.stackTrace ?? ""}"));
+    logger.onRecord.listen(
+        (rec) => print("$rec ${rec.error ?? ""} ${rec.stackTrace ?? ""}"));
+    configureDependencies();
   }
 
   /// Construct the request channel.
@@ -26,13 +32,9 @@ class LoginWithBlocApiChannel extends ApplicationChannel {
   Controller get entryPoint {
     final router = Router();
 
-    // Prefer to use `link` instead of `linkFunction`.
-    // See: https://aqueduct.io/docs/http/request_controller/
     router
-      .route("/example")
-      .linkFunction((request) async {
-        return Response.ok({"key": "value"});
-      });
+        .route('/auth/login')
+        .link(() => GetIt.instance.get<CheckLoginPasswordController>());
 
     return router;
   }
