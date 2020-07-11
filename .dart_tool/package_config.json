@@ -158,6 +158,12 @@
       "languageVersion": "2.0"
     },
     {
+      "name": "mysql1",
+      "rootUri": "file:///home/alanmxll/.pub-cache/hosted/pub.dartlang.org/mysql1-0.17.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "node_interop",
       "rootUri": "file:///home/alanmxll/.pub-cache/hosted/pub.dartlang.org/node_interop-1.1.1",
       "packageUri": "lib/",
@@ -362,7 +368,7 @@
       "languageVersion": "2.0"
     }
   ],
-  "generated": "2020-07-11T15:39:31.893890Z",
+  "generated": "2020-07-11T16:15:14.326276Z",
   "generator": "pub",
   "generatorVersion": "2.8.4"
 }
