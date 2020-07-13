@@ -1,5 +1,7 @@
 # login_with_bloc_api
 
+A login authentication API that follows a Clean Architecture standard made for an App that uses Bloc (Cubit).
+
 ## Running the Application Locally
 
 Run `aqueduct serve` from this directory to run the application. For running within an IDE, run `bin/main.dart`. By default, a configuration file named `config.yaml` will be used.
