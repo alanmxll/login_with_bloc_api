@@ -1,4 +1,4 @@
-# login_with_bloc_api
+# login_with_cubit_api
 
 A login authentication API that follows a Clean Architecture standard made for an App that uses Bloc (Cubit).
 
