@@ -1,9 +1,9 @@
 import 'package:injectable/injectable.dart';
-import 'package:login_with_bloc_api/core/database/i_database_connection.dart';
-import 'package:login_with_bloc_api/core/exception/exceptions.dart';
-import 'package:login_with_bloc_api/core/utils/cripty_utils.dart';
-import 'package:login_with_bloc_api/modules/user/data/model/login_model.dart';
 
+import '../../../../core/database/i_database_connection.dart';
+import '../../../../core/exception/exceptions.dart';
+import '../../../../core/utils/cripty_utils.dart';
+import '../model/login_model.dart';
 import 'i_user_datasource.dart';
 
 @LazySingleton(as: IUserDatasource)

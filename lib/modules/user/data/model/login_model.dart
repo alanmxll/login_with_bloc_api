@@ -1,5 +1,6 @@
-import 'package:login_with_bloc_api/modules/user/domain/entities/user.dart';
 import 'package:mysql1/mysql1.dart';
+
+import '../../domain/entities/user.dart';
 
 class LoginModel extends User {
   LoginModel.mapper(Map<int, dynamic> data)

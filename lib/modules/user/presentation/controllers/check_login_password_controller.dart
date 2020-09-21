@@ -1,9 +1,10 @@
 import 'package:aqueduct/aqueduct.dart';
 import 'package:injectable/injectable.dart';
 import 'package:jaguar_jwt/jaguar_jwt.dart';
-import 'package:login_with_bloc_api/modules/user/data/exception/user_not_found_exception.dart';
-import 'package:login_with_bloc_api/modules/user/domain/usecases/login_with_user_password.dart';
-import 'package:login_with_bloc_api/modules/user/presentation/models/check_login_request.dart';
+
+import '../../data/exception/user_not_found_exception.dart';
+import '../../domain/usecases/login_with_user_password.dart';
+import '../models/check_login_request.dart';
 
 @LazySingleton()
 class CheckLoginPasswordController extends ResourceController {

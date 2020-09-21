@@ -1,4 +1,4 @@
-import 'package:login_with_bloc_api/login_with_bloc_api.dart';
+import '../../../../login_with_bloc_api.dart';
 
 class CheckLoginRequest extends Serializable {
   String login;

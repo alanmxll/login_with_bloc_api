@@ -1,8 +1,8 @@
 import 'package:get_it/get_it.dart';
-import 'package:login_with_bloc_api/core/dependency_injection/dependency_injection_conf.dart';
-import 'package:login_with_bloc_api/modules/user/presentation/controllers/check_login_password_controller.dart';
 
+import 'core/dependency_injection/dependency_injection_conf.dart';
 import 'login_with_bloc_api.dart';
+import 'modules/user/presentation/controllers/check_login_password_controller.dart';
 
 /// This type initializes an application.
 ///

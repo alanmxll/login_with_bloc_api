@@ -1,8 +1,9 @@
 import 'package:injectable/injectable.dart';
-import 'package:login_with_bloc_api/modules/user/data/datasource/i_user_datasource.dart';
-import 'package:login_with_bloc_api/modules/user/data/exception/user_not_found_exception.dart';
-import 'package:login_with_bloc_api/modules/user/domain/entities/user.dart';
-import 'package:login_with_bloc_api/modules/user/domain/ports/i_user_repository.dart';
+
+import '../../domain/entities/user.dart';
+import '../../domain/ports/i_user_repository.dart';
+import '../datasource/i_user_datasource.dart';
+import '../exception/user_not_found_exception.dart';
 
 @LazySingleton(as: IUserRepository)
 class UserRepository implements IUserRepository {

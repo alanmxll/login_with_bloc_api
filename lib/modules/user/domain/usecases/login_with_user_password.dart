@@ -1,6 +1,7 @@
 import 'package:injectable/injectable.dart';
-import 'package:login_with_bloc_api/modules/user/domain/entities/user.dart';
-import 'package:login_with_bloc_api/modules/user/domain/ports/i_user_repository.dart';
+
+import '../entities/user.dart';
+import '../ports/i_user_repository.dart';
 
 @LazySingleton()
 class LoginWithUserPassword {
